@@ -1,0 +1,21 @@
+	Documentation
+https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/e42633ca46cf496e89aefa943ae6d49c/v1/readme.md
+It can be difficult to book a Unicorn for the right time. Customers usually want to see a list of results, and then select the best option. However, your team has realized that you’re returning more information than is really needed - your customers almost never look past the first page of the results, some times the results returned are not as specific as customers would like, and it can take a long time to get a result back when a customer asks for the options to rent Unicorn.
+
+You’ve been tasked with reworking the database queries to help your customers find the right Unicorn rental, which uses less compute, returns a smaller and more relevant set of options for your customers, and takes less time. Even better, if the queries use less compute.
+
+Here are the tables in our rds in csv format
+
+Customer Profiles
+Here are some customer profiles to help you think about how to cater queries that meet our customers needs in the most efficient way.
+
+Customer 1 wants to fly from Sprinkletown to Andalasia this weekend. Customer cost effective option of Unicorns less than or equal to $7 per kilometer.
+Results: Adiana, Amandaria
+Customer 2 would like to travel from Tinkledell to Andalasia.
+Results: Albany, Angelina, Boaz, Cortesia, Evania, Fleta
+Customer 3 would like to travel from Springfield to Glitterton.
+Results: Aletha, Annamika, Faith, Floriana
+QueryWriter Lambda Function
+To test your QueryWriter Lambda Function, here is a sample testevent.txt
+
+Since we emailed you the onboarding package through our craigslist listing just this morning, we realize you may not feel comfortable using all the tools required for your new job. Here is a short tutorial of Lambda and Python that we copied from a DevOps conference hosted by the local community center. 
