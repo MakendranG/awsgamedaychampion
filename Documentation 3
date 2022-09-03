@@ -1,0 +1,41 @@
+    #######################################################################################
+    #                           Read if you are new to Lambda                             #
+    #                           -----------------------------                             #
+    # [1 minute read]
+    # JSON: 
+    # Lambda uses "events" which are in json format to provide information to the lambda  # 
+    # function. An example of an "event" can be found in the readme in which the text can # 
+    # be copied and pasted into the test event in the lambda console. 
+    # In json formatted text there is a { key : value } pair. 
+    # For example: 
+    # In testevent.txt there is a { key : value } pair - "start-location" : "Sparkleville"
+    # To get the value of a key, we do this: event['start-location']
+    # [Try it yourself] 
+    # In line of code below. erase the '#' character and test the lambda function
+    # print(event['start-location'])
+    # You will see "Sparkleville" get printed out to the console. 
+    # Now in the test event try changing the value of "start-location" to "Rainbowdale" 
+    # 
+    #                           Read if you are new to Python                               #
+    #                           -----------------------------                               #
+    # [1 minute read]
+    # Comments: 
+    # Every code language allows the ability to comment. Comments allow us to provide 
+    # information in spoken languages for humans to read. The computer cannot see the comme
+    # -nts. A comment in python is led with the '#' character. So I can say something like: 
+    # Computer is so strict. It does not like when I talk this way. 
+    # If you delete the '#' character in the above line, and run the program, it will break. 
+    # 
+    # Variable Initialization: 
+    # The code on lines 18-20 in QueryWriter are called "variable initialization." The text on the left 
+    # side of the equal sign is called a variable. The text on the right is the value that 
+    # will be assigned to the variable.  
+    # For example:
+    # start_location is assigned event['start-location'] 
+    # [Try it yourself] 
+    # If you run the line of code below
+    # print(start_location) 
+    # under the line where start_location is initialized, we should see "Sparkleville" 
+    # or "Rainbowdale" 
+    #  
+    #######################################################################################
