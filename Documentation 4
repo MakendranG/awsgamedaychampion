@@ -1,0 +1,26 @@
+	Documentation
+https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/46067d4c799a4edf955adf398c5f82ac/v3/readme.md
+Important Note:
+This quest will automatically complete after 2 hours. The score will increase incrementally as time goes on and IT optimizations are fulfilled. Make sure you have enough to score any many points as you can. The Energy Efficiency Trend helps calculate your overall score. The higher the trend the better!
+
+Processing Expense Reports Frugally
+Our unicorns have been turning in hefty expense reports. We've decided to stand up as many instances as we can to process everything in the queue as quickly as we can. However...it seems our unicorns don't need their expenses to be fulfilled within seconds.
+
+Current state
+Currently we have several instances running at a low cpu percentage. This is not an efficient way to utilize EC2 instances. If we're going to pay for what we use, we should use it.
+
+The SQS queue called Expense-Report-Queue is empty at all times. It would probably be fine to keep messages waiting in the queue for a bit so we don't have to use so many instances. Patience is a virtue.
+
+archdiagram
+
+SQS metrics
+You can see the traffic of messages coming into Expense-Report-Queue via cloudwatch metrics in the sqs console.
+
+Quest Resources
+Launching instances
+There are some launch template provided to help you launch new instances:
+
+WorkerLaunchTemplate
+ArmWorkerLaunchTemplate
+Optional Automation
+Keeping tabs on the queue at all times takes a lot of manual work. Maybe a Cloudwatch alarm for the the SQS queue, Expense-Report-Queue, can trigger autoscaling events? Note there isn't an existing autoscaling group.
